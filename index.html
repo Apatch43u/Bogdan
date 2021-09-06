@@ -3,55 +3,7 @@
 <title>321</title>
 </head>
 <body>
-    <script>
-    let first = "Первая комната", second = "Вторая комната", third = "Третья комната", fourth = "Четвертая комната";
-let dimaHouse = { // Створення об'єкту, будинок з кімнатами
-    first:{
-        name: "Hall",
-        size:{
-            height: 2.5,
-            weight: 6,
-            long: 6,
-        },
-        color: "blue",
-    }
-}
-
-let onePlus1 = {"Вторая комната": { // Створення додаткової кімнати
-    name: "Kitchen",
-    size:{
-        height: 2.5,
-        weight: 7,
-        long: 8,
-    },
-    color: "white",} }
-let onePlus2 = {"Третья комната": {      // Створення додаткової кімнати  
-    name: "BathRoom",
-    size:{
-        height: 2.5,
-        weight: 2,
-        long: 4,
-    },
-    color: "grey",} }
-let onePlus3 = {"Четвертая комната": {        // Створення додаткової кімнати
-    name: "SleepRoom",
-    size:{
-        height: 2.5,
-        weight: 5,
-        long: 4,
-    },
-    color: "black",} }
-
-Object.assign(dimaHouse, onePlus1, onePlus2, onePlus3) // копирования значений всех свойств из всех исходных объектов в целевой объект dimaHouse.
-let bodyaHouse = Object.assign({}, dimaHouse)
-
-let vRoom = (() => { // Функция подсчёта обьема комнат
-    alert(bodyaHouse.first.size.height * bodyaHouse.first.size.weight * bodyaHouse.first.size.long)
-})
-vRoom(); //Вызов функции vRoom
-dimaHouse.first.size.height = 2;
-vRoom();//Вызов функции vRoom после изменения одного из параметров
-    </script>
+    <script src="hatch.js"></script>
 </body>
 </body>
 </html>
